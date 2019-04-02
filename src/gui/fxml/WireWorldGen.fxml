@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="550.0" maxWidth="500.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controllers.GenController">
+    <children>
+        <FlowPane fx:id="flowPane" maxHeight="500.0" maxWidth="500.0" minHeight="500.0" minWidth="500.0" onMouseClicked="#onClicked" prefHeight="500.0" prefWidth="500.0" />
+        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <Button fx:id="playButton" layoutX="12.5" layoutY="12.5" maxHeight="25.0" minHeight="25.0" mnemonicParsing="false" onAction="#onPlay" prefHeight="25.0" prefWidth="60.0" text="Play" />
+                <Button fx:id="cancelButton" layoutX="427.5" layoutY="12.5" mnemonicParsing="false" onAction="#onClose" prefWidth="60.0" text="Cancel" />
+                <Button fx:id="resetButton" layoutX="85.0" layoutY="12.5" mnemonicParsing="false" onAction="#onReset" prefWidth="60.0" text="Reset" />
+                <Button fx:id="stopButton" layoutX="157.5" layoutY="12.5" mnemonicParsing="false" onAction="#onStop" prefWidth="60.0" text="Stop" />
+                <Button fx:id="blackButton" layoutX="218.0" layoutY="12.5" mnemonicParsing="false" onAction="#onBlack" prefWidth="25.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="230.5" />
+                <Button fx:id="blueButton" layoutX="256.0" layoutY="12.5" mnemonicParsing="false" onAction="#onBlue" prefWidth="25.0" style="-fx-background-color: #0000FF;" AnchorPane.leftAnchor="268.5" />
+                <Button fx:id="RedButton" layoutX="294.0" layoutY="12.5" mnemonicParsing="false" onAction="#onRed" prefWidth="25.0" style="-fx-background-color: #FF0000;" AnchorPane.leftAnchor="306.5" />
+                <Button fx:id="YellowButton" layoutX="332.0" layoutY="12.5" mnemonicParsing="false" onAction="#onYellow" prefWidth="25.0" style="-fx-background-color: #FFFF00;" AnchorPane.leftAnchor="344.5" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
